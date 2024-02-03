@@ -128,7 +128,7 @@ class Bug {
         this.height = 30;
         this.speed = 0; // Adjusted speed for visibility
         this.bugImage = new Image();
-        this.bugImage.src = '/images/bug.png'; // Replace with the path to your bug image
+        this.bugImage.src = './images/bug.png'; // Replace with the path to your bug image
     }
 
     update() {
@@ -155,7 +155,7 @@ class Obstacle {
        
         // Obstacle Image
     this.image = new Image();
-    this.image.src = "images/shadow_dog1.png"; 
+    this.image.src = "./images/shadow_dog1.png"; 
    
     }
 
@@ -212,17 +212,17 @@ function drawSemicircle(startX, startY, endX, endY, radius) {
 const backgroundLayer1 = new Image();
 backgroundLayer1.src = "./images/backgroundLayers/layer-1.png";
 const backgroundLayer2 = new Image();
-backgroundLayer2.src = "images/backgroundLayers/layer-2.png";
+backgroundLayer2.src = "./images/backgroundLayers/layer-2.png";
 const backgroundLayer3 = new Image();
-backgroundLayer3.src = "images/backgroundLayers/layer-3.png";
+backgroundLayer3.src = "./images/backgroundLayers/layer-3.png";
 const backgroundLayer4 = new Image();
-backgroundLayer4.src = "images/backgroundLayers/layer-4.png";
+backgroundLayer4.src = "./images/backgroundLayers/layer-4.png";
 const backgroundLayer5 = new Image();
-backgroundLayer5.src = "images/backgroundLayers/layer-5.png";
+backgroundLayer5.src = "./images/backgroundLayers/layer-5.png";
 
 // Pole Image
 const poleImage = new Image();
-poleImage.src = "images/backgroundLayers/klipartz.com (2).png";
+poleImage.src = "./images/backgroundLayers/klipartz.com (2).png";
 
 // Bug
 const bug = new Bug();

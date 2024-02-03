@@ -1,0 +1,79 @@
+body{
+    background: black;
+}
+
+#canvas1{
+    border: 3px solid black;
+    position: absolute;
+    width: 800 px;
+    height: 700 px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+#timer {
+    border: 2px;
+    border-style: double;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(187 189 191);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#gameStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* #gameStatus img {
+    display: block;
+    width: 100%;
+} */
+
+
+#gameStatus p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+#gameStatus h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+#gameStatus h1:hover,
+#gameStatus p:hover,
+#score:hover,
+#score1:hover {
+    font-weight: 1200;
+    color: #C0C0C0;
+}
+
+#score,#score1{
+    font-size: 40px;
+    color: black;
+}

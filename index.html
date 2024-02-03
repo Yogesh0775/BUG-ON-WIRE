@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Games</title>
+    <link rel="icon" href="./images/shadow_dog1.png">
+    <style>
+            body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('images/frontpage.png');
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+           
+        .flx {
+            position: relative;
+            text-align: center;
+        }
+
+        .flx img {
+            display: block;
+            width: 100%; /* Ensure the image takes the full width */
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #startText {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 100px;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #startText:hover {
+            font-size: 120px;
+            font-weight: 800;
+            line-height: 120px;
+            color:#C0C0C0;
+           
+        }
+
+       
+        </style>
+
+</head>
+<body>
+       
+    <audio id="clickSound" src="Audio/72040-Mouse_click-BLASTWAVEFX-08911.wav" preload="auto"></audio>
+    <audio id="hoverSound" src="Audio/69456-Mouseover_hard_whoosh-BLASTWAVEFX-06140.wav" preload="auto"></audio>
+    <div class="flx">
+        <img src="images/buttonimage1.png" alt="START GAME">
+        <button onmouseover="playHoverSound()" onclick="playSound();startGame()">
+            <div id="startText">START GAME</div>
+        </button>
+    </div>
+ 
+    <script>
+         function playSound() {
+            var sound = document.getElementById('clickSound');
+            sound.play();
+        }
+        function playHoverSound() {
+            var hoverSound = document.getElementById('hoverSound');
+            hoverSound.play();
+        }
+
+        function startGame() {
+            window.location.href = "start.html"; // Navigate to the index.html page
+        }
+    </script>
+</body>
+</html>

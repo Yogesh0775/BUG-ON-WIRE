@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUG ON WIRE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add any other styles or meta tags here -->
+    <link rel="icon" href="./images/shadow_dog1.png">
+
+  
+</head>
+<body>
+    <audio id="hoverSound" src="Audio/69456-Mouseover_hard_whoosh-BLASTWAVEFX-06140.wav"preload="auto"></audio>
+    <audio id="gameAudio" preload="auto" loop>
+        <source src="Audio/117087-Crickets_at_night_steady_and_close_with_individual_cricket.wav" type="audio/mp3">
+      
+    </audio>
+    
+
+  <!-- Include the timer display -->
+  <div id="timer"></div>
+
+         <!-- New element for game status -->
+        <div id="gameStatus" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; display: none; z-index: 0;">
+            <!-- <img src="images/buttonimage1.png" alt="START GAME"> -->
+        <h1 onmouseover="playHoverSound()" id="gameOverText">GAME OVER</h1>
+        <p onmouseover="playHoverSound()" id="scoreText">Your score is: <span id="score"></span></p> 
+        <p onmouseover="playHoverSound()" id="restartText">Press <span id="score1">Enter</span> to <span id="score1">START OVER</span></p>
+    
+     
+    </div>
+    
+
+
+    <!-- Include the canvas element with an appropriate size -->
+    <canvas id="canvas1" width="800" height="700"></canvas>
+
+    <!-- Include game assets -->
+    <img src="images/bug.png" alt="Bug Image" style="display: none;">
+    <img src="images/shadow_dog1.png" alt="Obstacle Image" style="display: none;">
+    <img src="images/backgroundLayers/layer-1.png" alt="Background Layer 1" style="display: none;">
+    <img src="images/backgroundLayers/layer-2.png" alt="Background Layer 2" style="display: none;">
+    <img src="images/backgroundLayers/layer-3.png" alt="Background Layer 3" style="display: none;">
+    <img src="images/backgroundLayers/layer-4.png" alt="Background Layer 4" style="display: none;">
+    <img src="images/backgroundLayers/layer-5.png" alt="Background Layer 5" style="display: none;">
+    <img src="images/backgroundLayers/klipartz.com (2).png" alt="Pole Image" style="display: none;">
+    <script>
+         function playHoverSound() {
+            var hoverSound = document.getElementById('hoverSound');
+            hoverSound.play();
+        }
+    </script>
+
+    <!-- Include the script -->
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
+
